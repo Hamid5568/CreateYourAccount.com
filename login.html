@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    background-image: url('bg.jpg');
+    background-size: cover; /* Adjust to 'contain' or other options if needed */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This keeps the background fixed while scrolling */
+  }
+
+  .container {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+    height: 320px;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  input {
+    width: 80%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    width: 80%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 70px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  button:hover {
+    background-color: #33ff00;
+    color: black;
+  }
+  a {
+    text-transform: none;
+    margin-left:1px ;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  a:hover {
+color:rgb(228, 18, 98);
+  }
+  input:hover{
+    background-color: rgba(0, 0, 0, 0.781);
+    color:#ffffff;
+    border-radius: 50px;
+  }
+  h1:hover {
+    color:blue;
+  }
+  input{
+    border:none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1.5px solid rgb(0, 0, 0);
+    color:white;
+    transition: 3s;
+  }
+  input::placeholder {
+    color:white;
+  }
+  p{
+    color: aqua;
+  }
+  h1::selection{
+    color: #33ff00;
+  }
+  #typing-text{
+    font-size: 30px;
+    color: #ffffff;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Login</h1>
+  <form action="login.php">
+    <input type="text" placeholder="Username" required>
+    <input type="password" placeholder="Password" class="mail" required>
+    <button type="submit">Login</button>
+  </form>
+  <p>Not have an account.<a href="index.html"> Create</a></p>
+</div>
+<br>
+ <!--<div id="typing-container">
+    <p id="typing-text"></p>
+  </div>
+  
+  <script>
+    const textElement = document.getElementById('typing-text');
+    const textToType = "Hello, this is a typing animation!";
+    let index = 0;
+
+    function typeText() {
+      if (index < textToType.length) {
+        textElement.textContent += textToType.charAt(index);
+        index++;
+        setTimeout(typeText, 100); // Adjust typing speed (milliseconds)
+      }
+    }
+
+    typeText(); // Start the typing animation
+  </script>-->
+</body>
+</html>
